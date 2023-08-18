@@ -1,0 +1,70 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-size: 30px;
+   font-family: Arial;
+}
+body{
+   background-color: #ffffff;
+}
+.calc{
+   width: 500px;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   margin: 30px auto;
+   box-shadow: 0 0 10px 2px #8c8c8c;
+   border-radius: 8px;
+   padding-bottom: 10px;
+}
+.display{
+   color: #000000;
+   text-align: left;
+   font-size: 45px;
+   padding: 20px;
+   box-shadow: 0 0 10px 2px #8c8c8c;
+   border-radius: 8px;
+   margin: 20px 0px;
+   overflow: hidden;
+}
+.keypad-table tr:first-child .key{
+   background-color: #a5a5a5;
+   border: none;
+   box-shadow: inset 0 0 10px 2px #8c8c8c;
+}
+.keypad-table tr:first-child .key:active{
+   background-color: #a5a5a590;
+   border: none;
+}
+.keypad-table tr td:last-child .key{
+   background-color: #ffa45c;
+   border: none;
+   box-shadow: 0 0 10px 2px #8c8c8c;
+}
+.keypad-table tr td:last-child .key:active{
+   background-color: #f3d4bb;
+}
+.key{
+   width: 90px;
+   height: 90px;
+   border: none;
+   text-align: center;
+   line-height: 90px;
+   border-radius: 90px;
+   margin: 5px;
+   background-color: #333333;
+   color: #ffffff;
+   cursor: pointer;
+   user-select: none;
+   box-shadow: 0 0 10px 2px #8c8c8c;
+}
+.key:active{
+   background-color: #ff0000;
+}
+.all-clear{
+background-color: #ff0000 !important;
+}
+.all-clear:active{
+   background-color: #fbadad !important;
+   }
